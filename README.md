@@ -1,4 +1,5 @@
-Flight Deals Finder
+## Flight Deals Finder
+
 - Flight Deals Finder is a Python project designed to find and notify you about the cheapest flights from a specified origin airport to various destinations. 
 - The project integrates with multiple APIs to fetch flight data, update destination information, and send notifications via SMS and email.
 
