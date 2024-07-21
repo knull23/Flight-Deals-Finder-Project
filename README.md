@@ -1,14 +1,14 @@
 Flight Deals Finder
-Flight Deals Finder is a Python project designed to find and notify you about the cheapest flights from a specified origin airport to various destinations. 
-The project integrates with multiple APIs to fetch flight data, update destination information, and send notifications via SMS and email.
+- Flight Deals Finder is a Python project designed to find and notify you about the cheapest flights from a specified origin airport to various destinations. 
+- The project integrates with multiple APIs to fetch flight data, update destination information, and send notifications via SMS and email.
 
-Features
-Fetch Flight Data: Searches for the cheapest flights to specified destinations using the Amadeus API.
-Update Destination Information: Updates destination airport codes using the Amadeus API.
-Notifications: Sends notifications about cheap flights via SMS using Twilio and email using SMTP.
-Rate Limiting Handling: Includes delays in API requests to handle rate limiting.
+## Features
+1. Fetch Flight Data: Searches for the cheapest flights to specified destinations using the Amadeus API.
+2. Update Destination Information: Updates destination airport codes using the Amadeus API.
+3. Notifications: Sends notifications about cheap flights via SMS using Twilio and email using SMTP.
+4. Rate Limiting Handling: Includes delays in API requests to handle rate limiting.
 
-Project Structure
+## Project Structure
 .
 ├── main.py
 ├── data_manager.py
@@ -18,39 +18,39 @@ Project Structure
 ├── .env
 └── README.md
 
-main.py
+- main.py
 The main script that orchestrates the flight search and notification process.
 
-data_manager.py
+- data_manager.py
 Handles fetching and updating destination and user data from the Google Sheets API via Sheety.
 
-flight_search.py
+- flight_search.py
 Integrates with the Amadeus API to fetch flight information and airport codes.
 
-flight_data.py
+- flight_data.py
 Contains the FlightData class and a helper function find_cheapest_flight to process flight data.
 
-notification_manager.py
+- notification_manager.py
 Handles sending notifications via SMS using Twilio and emails using SMTP.
 
-Setup and Installation
+## Setup and Installation
 Prerequisites
 Python 3.7+
 Virtual environment (recommended)
 
-Installation
-Clone the repository:
-git clone https://github.com/your-username/flight-deals-finder.git
-cd flight-deals-finder
+## Installation
+- Clone the repository:
+  git clone https://github.com/your-username/flight-deals-finder.git
+  cd flight-deals-finder
 
-Create a virtual environment and activate it:
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+- Create a virtual environment and activate it:
+  python -m venv venv
+  source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
-Install the required packages:
-pip install -r requirements.txt
+- Install the required packages:
+  pip install -r requirements.txt
 
-Create a .env file in the project root and add your API keys and credentials:
+- Create a .env file in the project root and add your API keys and credentials:
 DB_API_KEY="your_amadeus_api_key"
 DB_API_SECRET="your_amadeus_api_secret"
 DB_USERNAME="your_sheety_username"
@@ -67,18 +67,18 @@ DB_MY_EMAIL="your_email_address"
 DB_MY_PASSWORD="your_email_password"
 DB_EMAIL_PROVIDER_SMTP_ADDRESS="smtp.your_email_provider.com"
 
-Run the script:
-python main.py
+- Run the script:
+  python main.py
 
-Usage
-Ensure your .env file is correctly configured with all the required API keys and endpoints.
-Run main.py to start the flight search and notification process.
-The script will fetch flight data, update destination codes, and notify you via SMS and email about the cheapest flights.
+## Usage
+1. Ensure your .env file is correctly configured with all the required API keys and endpoints.
+2. Run main.py to start the flight search and notification process.
+3. The script will fetch flight data, update destination codes, and notify you via SMS and email about the cheapest flights.
 
-API References
-Amadeus API
-Sheety API
-Twilio API
+## API References
+- Amadeus API
+- Sheety API
+- Twilio API
 
-Contributing
-Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
+## Contributing
+- Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
